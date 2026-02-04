@@ -1,5 +1,4 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Code2, Lightbulb, Target, Zap } from 'lucide-react';
 
@@ -7,22 +6,22 @@ const highlights = [
   {
     icon: Code2,
     title: 'Clean Code',
-    description: 'Writing maintainable, scalable code following best practices',
+    description: 'Well-structured, readable, and reusable code following best practices',
   },
   {
     icon: Lightbulb,
     title: 'Problem Solver',
-    description: 'Strong DSA skills with a focus on optimal solutions',
+    description: 'Hands-on practice with Data Structures & Algorithms',
   },
   {
     icon: Zap,
     title: 'Fast Learner',
-    description: 'Quick to adapt and learn new technologies',
+    description: 'Quickly adapts to new tools, frameworks, and technologies',
   },
   {
     icon: Target,
     title: 'Goal Oriented',
-    description: 'Focused on delivering impactful results',
+    description: 'Focused on building real-world, impactful applications',
   },
 ];
 
@@ -33,6 +32,7 @@ export function About() {
   return (
     <section id="about" className="section-padding bg-background relative">
       <div className="container mx-auto" ref={ref}>
+        {/* Section Heading */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -46,6 +46,7 @@ export function About() {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Visual */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -58,7 +59,7 @@ export function About() {
                   <div className="w-48 h-48 rounded-full bg-gradient-primary opacity-20 blur-2xl" />
                 </div>
                 <div className="relative z-10 h-full flex items-center justify-center">
-                  <span className="text-8xl font-bold text-gradient">YN</span>
+                  <span className="text-8xl font-bold text-gradient">JKR</span>
                 </div>
               </div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/20 rounded-2xl blur-xl" />
@@ -66,6 +67,7 @@ export function About() {
             </div>
           </motion.div>
 
+          {/* Right Content */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -73,19 +75,28 @@ export function About() {
             className="space-y-6"
           >
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate <span className="text-foreground font-semibold">Full-Stack Developer</span> currently 
-              pursuing my degree in Computer Science. With a strong foundation in 
+              I’m a <span className="text-foreground font-semibold">Computer Science undergraduate </span> 
+              and Full-Stack Developer with hands-on experience building modern web applications. 
+              I primarily work with 
               <span className="text-primary font-semibold"> React</span>, 
-              <span className="text-primary font-semibold"> JavaScript</span>, and 
-              <span className="text-primary font-semibold"> Data Structures & Algorithms</span>, 
-              I love building web applications that make a difference.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              My goal is to secure a position as an SDE at a top tech company, where I can 
-              contribute to innovative projects while continuing to grow as a developer. 
-              I'm particularly interested in creating scalable, user-centric applications.
+              <span className="text-primary font-semibold"> JavaScript</span>, 
+              <span className="text-primary font-semibold"> Node.js</span>, and 
+              <span className="text-primary font-semibold"> Express.js</span>, 
+              along with a strong foundation in 
+              <span className="text-primary font-semibold"> Data Structures & Algorithms</span>.
             </p>
 
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Currently in my <span className="text-foreground font-semibold">5th semester of B.Tech</span>, 
+              I enjoy working across the stack—from building responsive user interfaces to creating 
+              RESTful APIs—while continuously strengthening my core computer science fundamentals.
+            </p>
+
+            <p className="text-sm text-muted-foreground">
+              Tech Stack: React, JavaScript, Node.js, Express, C++, Tailwind CSS, Git, GitHub
+            </p>
+
+            {/* Highlights */}
             <div className="grid grid-cols-2 gap-4 pt-6">
               {highlights.map((item, index) => (
                 <motion.div
