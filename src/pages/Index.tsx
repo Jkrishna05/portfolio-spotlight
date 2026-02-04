@@ -19,7 +19,7 @@ const Index = () => {
         <Education />
         <Contact />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

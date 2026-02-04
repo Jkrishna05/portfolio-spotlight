@@ -148,3 +148,13 @@
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(174 72% 56% / 0.5);
 }
+.side-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: clamp(1rem, 5vw, 5rem);
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.08);
+  text-transform: uppercase;
+  user-select: none;
+}

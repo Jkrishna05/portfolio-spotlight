@@ -28,9 +28,8 @@ export function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'glass py-3' : 'bg-transparent py-5'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'glass py-3' : 'bg-transparent py-5'
+        }`}
     >
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <motion.a
@@ -38,7 +37,7 @@ export function Navbar() {
           className="text-2xl font-bold text-gradient font-display"
           whileHover={{ scale: 1.05 }}
         >
-          {'<Dev />'}
+          {'<Jay Krishna Rout />'}
         </motion.a>
 
         {/* Desktop Navigation */}
@@ -57,18 +56,24 @@ export function Navbar() {
         {/* Desktop Social Links */}
         <div className="hidden md:flex items-center gap-3">
           <Button variant="ghost" size="icon" asChild>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Jkrishna05" target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5" />
             </a>
           </Button>
           <Button variant="ghost" size="icon" asChild>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/in/jay-krishna-rout-711182358" target="_blank" rel="noopener noreferrer">
               <Linkedin className="h-5 w-5" />
             </a>
           </Button>
-          <Button variant="hero" size="sm">
-            <FileText className="h-4 w-4" />
-            Resume
+          <Button variant="hero" size="sm" className="flex-1" asChild>
+            <a
+              href="/Jay_Krishna_Rout_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FileText className="h-4 w-4" />
+              Resume
+            </a>
           </Button>
         </div>
 
@@ -105,12 +110,12 @@ export function Navbar() {
               ))}
               <div className="flex gap-3 pt-4 border-t border-border/50">
                 <Button variant="ghost" size="icon" asChild>
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/Jkrishna05" target="_blank" rel="noopener noreferrer">
                     <Github className="h-5 w-5" />
                   </a>
                 </Button>
                 <Button variant="ghost" size="icon" asChild>
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://linkedin.com/in/jay-krishna-rout-711182358" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="h-5 w-5" />
                   </a>
                 </Button>
