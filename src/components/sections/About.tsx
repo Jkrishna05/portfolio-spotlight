@@ -8,21 +8,21 @@ const highlights = [
     title: 'Clean Code',
     description: 'Well-structured, readable, and reusable code following best practices',
   },
-  {
-    icon: Lightbulb,
-    title: 'Problem Solver',
-    description: 'Hands-on practice with Data Structures & Algorithms',
-  },
-  {
-    icon: Zap,
-    title: 'Fast Learner',
-    description: 'Quickly adapts to new tools, frameworks, and technologies',
-  },
-  {
-    icon: Target,
-    title: 'Goal Oriented',
-    description: 'Focused on building real-world, impactful applications',
-  },
+  // {
+  //   icon: Lightbulb,
+  //   title: 'Problem Solver',
+  //   description: 'Hands-on practice with Data Structures & Algorithms',
+  // },
+  // {
+  //   icon: Zap,
+  //   title: 'Fast Learner',
+  //   description: 'Quickly adapts to new tools, frameworks, and technologies',
+  // },
+  // {
+  //   icon: Target,
+  //   title: 'Goal Oriented',
+  //   description: 'Focused on building real-world, impactful applications',
+  // },
 ];
 
 export function About() {
@@ -39,7 +39,7 @@ export function About() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-mono text-sm">01. About Me</span>
+          <span className="text-primary font-mono text-sm">About Me</span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4">
             Who I <span className="text-gradient">Am</span>
           </h2>
@@ -87,13 +87,15 @@ export function About() {
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Currently in my <span className="text-foreground font-semibold">5th semester of B.Tech</span>, 
-              I enjoy working across the stack—from building responsive user interfaces to creating 
-              RESTful APIs—while continuously strengthening my core computer science fundamentals.
+              Currently in my <span className="text-foreground font-semibold">6th semester of B.Tech</span>, 
+           I enjoy working across the entire development lifecycle — from designing intuitive user interfaces to developing efficient RESTful APIs and backend logic. I focus on writing clean, maintainable code and continuously improving my problem-solving skills. 
             </p>
-
+             
+             <p className="text-lg text-muted-foreground leading-relaxed">
+                  I am actively strengthening my backend knowledge, exploring databases and Docker, and aiming to grow into a well-rounded software engineer capable of building production-ready applications.
+             </p>
             <p className="text-sm text-muted-foreground">
-              Tech Stack: React, JavaScript, Node.js, Express, C++, Tailwind CSS, Git, GitHub
+              Tech Stack: React, React Native ,JavaScript, Node.js, Express, C++, Tailwind CSS, Git, GitHub
             </p>
 
             {/* Highlights */}
